@@ -1,4 +1,0 @@
-main; func1; func2
-main; func1; func2
-main; func1; func3
-main; func1; func2

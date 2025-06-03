@@ -1,18 +1,19 @@
 use std::fs::File;
-use std::io::Write;
+use std::io::{BufRead, BufReader};
+use inferno::flamegraph::{self, Options};
 
 fn main() {
-    let stacks = vec![
-        "main; func1; func2",
-        "main; func1; func2",
-        "main; func1; func3",
-        "main; func1; func2",
-    ];
+    // 替换为你的txt文件路径
+    let file_path = "stacks.txt";
+    let file = File::open(file_path).expect("Failed to open file");
+    let reader = BufReader::new(file);
 
-    let mut file = File::create("stacks.txt").expect("无法创建文件");
-    for stack in stacks {
-        writeln!(file, "{}", stack).expect("无法写入文件");
-    }
+    let mut options = Options::default();
+    // 可以根据需要设置更多选项
+    // options.colors = inferno::flamegraph::color::Palette::from_str("hot").unwrap();
 
-    println!("堆栈数据已保存到 stacks.txt");
+    let mut output_file = File::create("flamegraph.svg").expect("Failed to create SVG file");
+    flamegraph::from_reader(&mut options, reader, &mut output_file).expect("Failed to generate flamegraph");
+
+    println!("Flamegraph generated and saved as flamegraph.svg");
 }
