@@ -20,24 +20,45 @@
 use reqwest;
 use serde_json::Value;
 use std::fs::File;
+use std::io::Read;
 use std::io::Write;
-
+use futures::future::join_all; 
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let url = "http://127.0.0.1:9922/apis/pythonext/callstack";
+    let mut file = File::open("urls.json")?;
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)?;
+    let urls: Vec<String> = serde_json::from_str(&contents)?;
 
-    let res = reqwest::get(url).await?;
-    let body = res.text().await?;
-    println!("Body: {}", body);
+    let client = reqwest::Client::new();
 
-    let json: Value = serde_json::from_str(&body)?;
+    let mut tasks = Vec::new();
+    for url in urls {
+        let client = client.clone();
+        tasks.push(async move {
+            let res = client.get(&url).send().await?;
+            let body = res.text().await?;
+            let json: Value = serde_json::from_str(&body).expect("REASON");
+            Ok(json)
+        });
+    }
 
-    let file_path = "response.json";
-    let mut file = File::create(file_path)?;
-    file.write_all(json.to_string().as_bytes())?;
+    let results: Vec<Result<Value, reqwest::Error>> = join_all(tasks).await;
 
-    println!("JSON response saved to {}", file_path);
+    let mut data_list = Vec::new();
+    for result in results {
+        match result {
+            Ok(json) => data_list.push(json),
+            Err(e) => eprintln!("Error: {}", e),
+        }
+    }
+
+    let output = serde_json::to_string_pretty(&data_list)?;
+    let mut file = File::create("output.json")?;
+    file.write_all(output.as_bytes())?;
+
+    println!("Data has been saved to output.json");
 
     Ok(())
 }
