@@ -2,8 +2,7 @@ use std::fs::File;
 use std::io::BufReader;
 use inferno::flamegraph::{self, Options, Palette};
 
-fn draw_frame_graph(file_path: &str) {
-    // let file_path = "stacks.txt";
+pub fn draw_frame_graph(file_path: &str) {
     let file = File::open(file_path).expect("Failed to open file");
     let reader = BufReader::new(file);
 
@@ -14,15 +13,16 @@ fn draw_frame_graph(file_path: &str) {
     flamegraph::from_reader(&mut options, reader, &mut output_file).expect("Failed to generate flamegraph");
 
     println!("Flamegraph generated and saved as flamegraph.svg");
-// }
+}
 
 #[cfg(test)]
+use std::fs;
 mod tests {
     use super::*;
 
     #[test]
     fn test_draw_frame_graph() {
         draw_frame_graph("stacks.txt");
-        // 为了简单起见，我们只调用函数。
+        assert!(fs::metadata("flamegraph.svg").is_ok(), "SVG file should exist");
     }
 }
