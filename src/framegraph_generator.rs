@@ -9,7 +9,7 @@ pub fn draw_frame_graph(file_path: &str) {
     let mut options = Options::default();
     options.colors = Palette::Multi(flamegraph::color::MultiPalette::Java);
 
-    let mut output_file = File::create("flamegraph.svg").expect("Failed to create SVG file");
+    let mut output_file = File::create("./output/flamegraph.svg").expect("Failed to create SVG file");
     flamegraph::from_reader(&mut options, reader, &mut output_file).expect("Failed to generate flamegraph");
 
     println!("Flamegraph generated and saved as flamegraph.svg");

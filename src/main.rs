@@ -8,10 +8,10 @@ mod stack_merger;
 mod process_data;
 
 // use stack_collector::fetch_and_save_urls;
-// use framegraph_generator::draw_frame_graph;
+use framegraph_generator::draw_frame_graph;
 
-use stack_merger::{merge_stacks, StackTrie};
-// use process_data::process_callstacks;
+use stack_merger::{merge_stacks};
+use process_data::process_callstacks;
 
 // #[tokio::main]
 // async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -23,7 +23,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // fetch_and_save_urls(urls).await?;
 
-    // draw_frame_graph("stacks.txt");
+    draw_frame_graph("./output/stacks.txt");
 
     //////////////////////////////////////////////////////////////////////////
 
@@ -36,19 +36,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let trie = merge_stacks(stacks);
 
-    let mut output = File::create("merged_stacks.txt")?;
+    let mut output = File::create("./output/merged_stacks.txt")?;
     for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
         writeln!(output, "{} {} 1", path.join(";"), rank_str)?;
     }
 
-    Ok(())
     ////////////////////////////////////////////////////////////////////////////////
     
-    // let input_path = "output.json";
-    // let output_path = "processed_stacks.txt";
-    // process_callstacks(input_path, output_path)?;
+    let input_path = "./output/output.json";  //整理4个进程的数据
+    let output_path = "./output/processed_stacks.txt";
+    process_callstacks(input_path, output_path)?;
 
-    // println!("Processed call stacks have been written to {}", output_path);
-    // Ok(())
+    println!("Processed call stacks have been written to {}", output_path);
+    Ok(())
 
 }

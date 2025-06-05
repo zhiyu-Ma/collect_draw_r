@@ -15,11 +15,12 @@
 ### 3. 火焰图绘制
 定制化火焰图生成.
 
-## 文件说明
+## Output文件说明
 
 - `urls.json` 为模拟的请求;
 - `response.json` 为单进程收集数据;
 - `output.json` 为模拟4进程收集的数据;
 - `processed_stacks.txt` 为json转换成一维txt;
 - `merged_stacks.txt` 为合并后的堆栈信息;
+- `mmm.svg` 测试堆栈合并火焰图;
 - `flamegraph.svg` 为生成的火焰图;
