@@ -41,18 +41,18 @@ pub fn process_callstacks(input_path: &str, output_path: &str) -> io::Result<()>
         for frame in trace {
             match frame {
                 Frame::CFrame(cframe) => {
-                    println!("  CFrame:");
-                    println!("    File: {:?}", cframe.file);
-                    println!("    Function: {}", cframe.func);
-                    println!("    IP: {}", cframe.ip);
-                    println!("    Line: {}", cframe.lineno);
+                    // println!("  CFrame:");
+                    // println!("    File: {:?}", cframe.file);
+                    // println!("    Function: {}", cframe.func);
+                    // println!("    IP: {}", cframe.ip);
+                    // println!("    Line: {}", cframe.lineno);
                 }
                 Frame::PyFrame(pyframe) => {
-                    println!("  PyFrame:");
-                    println!("    File: {}", pyframe.file);
-                    println!("    Function: {}", pyframe.func);
-                    println!("    Line: {}", pyframe.lineno);
-                    println!("    Locals: {:?}", pyframe.locals);
+                    // println!("  PyFrame:");
+                    // println!("    File: {}", pyframe.file);
+                    // println!("    Function: {}", pyframe.func);
+                    // println!("    Line: {}", pyframe.lineno);
+                    // println!("    Locals: {:?}", pyframe.locals);
                 }
             }
             local_stack.push(frame.clone());
@@ -84,4 +84,20 @@ pub fn process_callstacks(input_path: &str, output_path: &str) -> io::Result<()>
     }
 
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;   
+
+    #[test]
+    fn test_process_callstacks() {
+        let input_path = "./output/output.json"; 
+        let output_path = "./output/processed_stacks.txt";
+        let result = process_callstacks(input_path, output_path);
+        assert!(result.is_ok(), "Processing call stacks should succeed");
+        assert!(std::fs::metadata(output_path).is_ok(), "Output file should exist");
+        let output_content = std::fs::read_to_string(output_path).expect("Failed to read output file");
+        assert!(!output_content.is_empty(), "Output file should not be empty"); 
+    }
 }

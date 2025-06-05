@@ -56,6 +56,9 @@ impl StackTrie {
             let mut str_buf = String::new();
             let mut low = 0;
             let mut high = 0;
+            if ranks.len() == 0 {
+                return str_buf;
+            }
             while high < ranks.len() - 1 {
                 let low_value = ranks[low];
                 let mut high_value = ranks[high];
@@ -91,10 +94,12 @@ impl StackTrie {
             let rank_str = self.format_rank_str(&child.ranks);
             if child.is_end_of_stack {
                 let path_str = path.join(";");
-                result.push((vec![path_str, frame.to_string()], rank_str));
+                result.push((vec![path_str, frame.to_string()], rank_str.clone()));
             }
             let mut child_path = path.clone();
-            child_path.push(frame);
+            let frame_rank = format!("{}{}", frame, rank_str);
+            child_path.push(&frame_rank[..]);
+            // child_path.push(rank_str.as_str());
             result.extend(self.traverse_with_all_stack(child, child_path));
         }
         result
@@ -121,3 +126,21 @@ fn read_file_to_list(file_path: &str) -> io::Result<Vec<String>> {
     }
     Ok(lines)
 }
+
+    //////////////////////////////////////////////////////////////////////////
+
+    // let stacks = vec![
+    //     "main;func1;func2;func3",
+    //     "main;func1;func2;func4",
+    //     "main;func1;func3;func5",
+    //     "main;func1;func3;func6",
+    // ];
+
+    // let trie = merge_stacks(stacks);
+
+    // let mut output = File::create("./output/merged_stacks.txt")?;
+    // for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
+    //     writeln!(output, "{} {} 1", path.join(";"), rank_str)?;
+    // }
+
+    ////////////////////////////////////////////////////////////////////////////////
