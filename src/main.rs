@@ -10,8 +10,8 @@ mod process_data;
 // use stack_collector::fetch_and_save_urls;
 // use framegraph_generator::draw_frame_graph;
 
-// use stack_merger::{merge_stacks, StackTrie};
-use process_data::process_callstacks;
+use stack_merger::{merge_stacks, StackTrie};
+// use process_data::process_callstacks;
 
 // #[tokio::main]
 // async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -27,28 +27,28 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     //////////////////////////////////////////////////////////////////////////
 
-    // let stacks = vec![
-    //     "main;func1;func2;func3",
-    //     "main;func1;func2;func4",
-    //     "main;func1;func3;func5",
-    //     "main;func1;func3;func6",
-    // ];
+    let stacks = vec![
+        "main;func1;func2;func3",
+        "main;func1;func2;func4",
+        "main;func1;func3;func5",
+        "main;func1;func3;func6",
+    ];
 
-    // let trie = merge_stacks(stacks);
+    let trie = merge_stacks(stacks);
 
-    // let mut output = File::create("merged_stacks.txt")?;
-    // for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
-    //     writeln!(output, "{} {}", path.join(";"), rank_str)?;
-    // }
+    let mut output = File::create("merged_stacks.txt")?;
+    for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
+        writeln!(output, "{} {}", path.join(";"), rank_str)?;
+    }
 
-    // Ok(())
+    Ok(())
     ////////////////////////////////////////////////////////////////////////////////
     
-    let input_path = "output.json";
-    let output_path = "processed_stacks.txt";
-    process_callstacks(input_path, output_path)?;
+    // let input_path = "output.json";
+    // let output_path = "processed_stacks.txt";
+    // process_callstacks(input_path, output_path)?;
 
-    println!("Processed call stacks have been written to {}", output_path);
-    Ok(())
+    // println!("Processed call stacks have been written to {}", output_path);
+    // Ok(())
 
 }

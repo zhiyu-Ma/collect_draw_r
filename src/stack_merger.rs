@@ -56,6 +56,9 @@ impl StackTrie {
             let mut str_buf = String::new();
             let mut low = 0;
             let mut high = 0;
+            if ranks.len() == 0 {
+                return str_buf;
+            }
             while high < ranks.len() - 1 {
                 let low_value = ranks[low];
                 let mut high_value = ranks[high];
