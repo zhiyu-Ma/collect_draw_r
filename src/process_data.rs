@@ -41,18 +41,18 @@ pub fn process_callstacks(input_path: &str, output_path: &str) -> io::Result<()>
         for frame in trace {
             match frame {
                 Frame::CFrame(cframe) => {
-                    println!("  CFrame:");
-                    println!("    File: {:?}", cframe.file);
-                    println!("    Function: {}", cframe.func);
-                    println!("    IP: {}", cframe.ip);
-                    println!("    Line: {}", cframe.lineno);
+                    // println!("  CFrame:");
+                    // println!("    File: {:?}", cframe.file);
+                    // println!("    Function: {}", cframe.func);
+                    // println!("    IP: {}", cframe.ip);
+                    // println!("    Line: {}", cframe.lineno);
                 }
                 Frame::PyFrame(pyframe) => {
-                    println!("  PyFrame:");
-                    println!("    File: {}", pyframe.file);
-                    println!("    Function: {}", pyframe.func);
-                    println!("    Line: {}", pyframe.lineno);
-                    println!("    Locals: {:?}", pyframe.locals);
+                    // println!("  PyFrame:");
+                    // println!("    File: {}", pyframe.file);
+                    // println!("    Function: {}", pyframe.func);
+                    // println!("    Line: {}", pyframe.lineno);
+                    // println!("    Locals: {:?}", pyframe.locals);
                 }
             }
             local_stack.push(frame.clone());
