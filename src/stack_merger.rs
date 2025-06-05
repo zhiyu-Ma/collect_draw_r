@@ -126,3 +126,21 @@ fn read_file_to_list(file_path: &str) -> io::Result<Vec<String>> {
     }
     Ok(lines)
 }
+
+    //////////////////////////////////////////////////////////////////////////
+
+    // let stacks = vec![
+    //     "main;func1;func2;func3",
+    //     "main;func1;func2;func4",
+    //     "main;func1;func3;func5",
+    //     "main;func1;func3;func6",
+    // ];
+
+    // let trie = merge_stacks(stacks);
+
+    // let mut output = File::create("./output/merged_stacks.txt")?;
+    // for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
+    //     writeln!(output, "{} {} 1", path.join(";"), rank_str)?;
+    // }
+
+    ////////////////////////////////////////////////////////////////////////////////
