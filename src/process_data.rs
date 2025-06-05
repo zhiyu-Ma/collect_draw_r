@@ -1,53 +1,87 @@
 use serde::{Deserialize, Serialize};
 use std::fs::File;
-use std::io::{self, Read};
-use serde_json;
+use std::io::{self, Read, Write};
 
-// 定义 JSON 数据结构
 #[derive(Debug, Deserialize, Serialize)]
-pub struct Frame {
-    pub func: String,
-    pub file: String,
-    pub lineno: u32,
+enum Frame {
+    CFrame(CFrame),
+    PyFrame(PyFrame),
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-#[serde(untagged)]
-pub enum StackEntry {
-    CFrame { c_frame: Frame },
-    PyFrame { py_frame: Frame },
+struct CFrame {
+    file: String,
+    func: String,
+    ip: String,
+    lineno: u32,
 }
 
-impl StackEntry {
-    pub fn get_frame(&self) -> Option<&Frame> {
-        match self {
-            StackEntry::CFrame { c_frame } => Some(c_frame),
-            StackEntry::PyFrame { py_frame } => Some(py_frame),
-        }
-    }
+#[derive(Debug, Deserialize, Serialize)]
+struct PyFrame {
+    file: String,
+    func: String,
+    lineno: u32,
+    locals: serde_json::Value,
 }
 
-// 解析 JSON 文件并返回 Vec<StackEntry>
-pub fn process_callstacks(input_path: &str) -> io::Result<Vec<StackEntry>> {
+// 解析 JSON 文件并处理调用栈
+pub fn process_callstacks(input_path: &str, output_path: &str) -> io::Result<()> {
     // 读取并解析 JSON 文件
     let mut file = File::open(input_path)?;
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
 
     // 解析 JSON 数据
-    let data: Vec<serde_json::Value> = serde_json::from_str(&contents)?;
+    let frames:  Vec<Vec<Frame>> = serde_json::from_str(&contents)?;
 
-    // 将 JSON 数据转换为 Vec<StackEntry>
-    let mut stack_entries = Vec::new();
-    for entry in data {
-        if let Some(c_frame) = entry.get("CFrame") {
-            let c_frame: Frame = serde_json::from_value(c_frame.clone()).unwrap();
-            stack_entries.push(StackEntry::CFrame { c_frame });
-        } else if let Some(py_frame) = entry.get("PyFrame") {
-            let py_frame: Frame = serde_json::from_value(py_frame.clone()).unwrap();
-            stack_entries.push(StackEntry::PyFrame { py_frame });
+    // 处理调用栈
+    let mut out_stacks = Vec::new();
+    for (i, trace) in frames.iter().enumerate() {
+        let mut local_stack = Vec::new();
+        for frame in trace {
+            match frame {
+                Frame::CFrame(cframe) => {
+                    println!("  CFrame:");
+                    println!("    File: {:?}", cframe.file);
+                    println!("    Function: {}", cframe.func);
+                    println!("    IP: {}", cframe.ip);
+                    println!("    Line: {}", cframe.lineno);
+                }
+                Frame::PyFrame(pyframe) => {
+                    println!("  PyFrame:");
+                    println!("    File: {}", pyframe.file);
+                    println!("    Function: {}", pyframe.func);
+                    println!("    Line: {}", pyframe.lineno);
+                    println!("    Locals: {:?}", pyframe.locals);
+                }
+            }
+            local_stack.push(frame.clone());
+        }
+        local_stack.reverse();
+        out_stacks.push(local_stack);
+    }
+
+    // 准备输出数据
+    let mut prepare_stacks = Vec::new();
+    for rank in out_stacks {
+        if !rank.is_empty() {
+            let data = rank
+                .iter()
+                .map(|entry| match entry {
+                    Frame::CFrame(frame) => format!("{} ({}:{})", frame.func, frame.file, frame.lineno),
+                    Frame::PyFrame(frame) => format!("{} ({}:{})", frame.func, frame.file, frame.lineno),
+                })
+                .collect::<Vec<String>>()
+                .join(";");
+            prepare_stacks.push(data);
         }
     }
 
-    Ok(stack_entries)
+    // 将堆栈数据写入输出文件
+    let mut output_file = File::create(output_path)?;
+    for stack in prepare_stacks {
+        writeln!(output_file, "{}", stack)?;
+    }
+
+    Ok(())
 }

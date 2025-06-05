@@ -44,16 +44,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Ok(())
     ////////////////////////////////////////////////////////////////////////////////
     
-    let input_path = "response.json";
-    let stack_entries = process_callstacks(input_path)?;
+    let input_path = "output.json";
+    let output_path = "processed_stacks.txt";
+    process_callstacks(input_path, output_path)?;
 
-    // 打印解析后的数据
-    for entry in stack_entries {
-        if let Some(frame) = entry.get_frame() {
-            println!("Function: {}, File: {}, Line: {}", frame.func, frame.file, frame.lineno);
-        }
-    }
-
+    println!("Processed call stacks have been written to {}", output_path);
     Ok(())
 
 }
