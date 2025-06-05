@@ -9,6 +9,11 @@
 ### 1. 收集数据
 **前置条件**: 确保已经启用了性能分析工具Probing网页服务，并且已经生成了性能分析数据.
 
+```bash
+❯ cd /home/yang/worksapce/demangle_l                                                                                                                      
+❯ source /home/yang/worksapce/probing/venv/bin/activate                                                                                                     ❯ PROBING=1 PROBING_PORT=9922 python main.py     
+```
+
 ### 2. 堆栈合并
 收集多个rank堆栈信息并进行合并.
 

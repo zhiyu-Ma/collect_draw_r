@@ -22,7 +22,7 @@ mod tests {
 
     #[test]
     fn test_draw_frame_graph() {
-        draw_frame_graph("stacks.txt");
-        assert!(fs::metadata("flamegraph.svg").is_ok(), "SVG file should exist");
+        draw_frame_graph("./output/stacks.txt");
+        assert!(fs::metadata("./output/flamegraph.svg").is_ok(), "SVG file should exist");
     }
 }
