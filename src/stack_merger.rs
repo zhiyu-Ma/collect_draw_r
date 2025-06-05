@@ -94,10 +94,11 @@ impl StackTrie {
             let rank_str = self.format_rank_str(&child.ranks);
             if child.is_end_of_stack {
                 let path_str = path.join(";");
-                result.push((vec![path_str, frame.to_string()], rank_str));
+                result.push((vec![path_str, frame.to_string()], rank_str.clone()));
             }
             let mut child_path = path.clone();
             child_path.push(frame);
+            child_path.push(rank_str.as_str());
             result.extend(self.traverse_with_all_stack(child, child_path));
         }
         result
