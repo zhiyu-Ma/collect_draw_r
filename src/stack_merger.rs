@@ -97,8 +97,9 @@ impl StackTrie {
                 result.push((vec![path_str, frame.to_string()], rank_str.clone()));
             }
             let mut child_path = path.clone();
-            child_path.push(frame);
-            child_path.push(rank_str.as_str());
+            let frame_rank = format!("{}{}", frame, rank_str);
+            child_path.push(&frame_rank[..]);
+            // child_path.push(rank_str.as_str());
             result.extend(self.traverse_with_all_stack(child, child_path));
         }
         result

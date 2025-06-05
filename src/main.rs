@@ -38,7 +38,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let mut output = File::create("merged_stacks.txt")?;
     for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
-        writeln!(output, "{} {}", path.join(";"), rank_str)?;
+        writeln!(output, "{} {} 1", path.join(";"), rank_str)?;
     }
 
     Ok(())
