@@ -2,12 +2,14 @@ use serde::{Deserialize, Serialize};
 use std::fs::File;
 use std::io::{self, Read, Write};
 
+/// Represents a frame in the call stack, which can be either a C frame or a Python frame.
 #[derive(Debug, Deserialize, Serialize)]
 enum Frame {
     CFrame(CFrame),
     PyFrame(PyFrame),
 }
 
+/// Represents a C frame in the call stack.
 #[derive(Debug, Deserialize, Serialize)]
 struct CFrame {
     file: String,
@@ -16,6 +18,7 @@ struct CFrame {
     lineno: u32,
 }
 
+/// Represents a Python frame in the call stack.
 #[derive(Debug, Deserialize, Serialize)]
 struct PyFrame {
     file: String,
@@ -24,7 +27,7 @@ struct PyFrame {
     locals: serde_json::Value,
 }
 
-// 解析 JSON 文件并处理调用栈
+/// Process call stacks from a JSON file and write the processed stacks to a text file.
 pub fn process_callstacks(input_path: &str, output_path: &str) -> io::Result<()> {
     // 读取并解析 JSON 文件
     let mut file = File::open(input_path)?;

@@ -4,6 +4,7 @@ use std::fs::File;
 use std::io::Write;
 use futures::future::join_all; 
 
+/// Fetches JSON data from a list of URLs and saves the combined data to a file.
 pub async fn fetch_and_save_urls(urls: Vec<String>) -> Result<(), Box<dyn std::error::Error>> {
     let client = reqwest::Client::new();
 
