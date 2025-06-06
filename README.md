@@ -1,4 +1,5 @@
 # 收集堆栈合并与绘制火焰图
+[![Rust](https://github.com/yangrudan/collect_draw_r/actions/workflows/rust.yml/badge.svg)](https://github.com/yangrudan/collect_draw_r/actions/workflows/rust.yml)
 
 ## 介绍
 
@@ -11,7 +12,8 @@
 
 ```bash
 ❯ cd /home/yang/worksapce/demangle_l                                                                                                                      
-❯ source /home/yang/worksapce/probing/venv/bin/activate                                                                                                     ❯ PROBING=1 PROBING_PORT=9922 python main.py     
+❯ source /home/yang/worksapce/probing/venv/bin/activate
+❯ PROBING=1 PROBING_PORT=9922 python main.py     
 ```
 
 ### 2. 堆栈合并
