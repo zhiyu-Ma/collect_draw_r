@@ -2,6 +2,7 @@ use std::fs::File;
 use std::io::BufReader;
 use inferno::flamegraph::{self, Options, Palette};
 
+/// Generates a flamegraph from a stack trace file and saves it as an SVG file.
 pub fn draw_frame_graph(file_path: &str) {
     let file = File::open(file_path).expect("Failed to open file");
     let reader = BufReader::new(file);

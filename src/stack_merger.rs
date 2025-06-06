@@ -2,6 +2,7 @@ use std::collections::HashMap;
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 
+/// Represents a node in the Trie structure for stack traces.
 #[derive(Debug, Clone)]
 pub struct TrieNode {
     children: HashMap<String, TrieNode>,
@@ -23,6 +24,7 @@ impl TrieNode {
     }
 }
 
+/// Represents a Trie structure for merging stack traces.
 pub struct StackTrie {
     pub root: TrieNode,
     all_ranks: Vec<u32>,
@@ -106,6 +108,7 @@ impl StackTrie {
     }
 }
 
+/// Merges multiple stack traces into a single StackTrie.
 pub fn merge_stacks(stacks: Vec<&str>) -> StackTrie {
     let all_ranks: Vec<u32> = (0..stacks.len() as u32).collect();
     let mut trie = StackTrie::new(all_ranks);

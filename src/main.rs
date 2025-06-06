@@ -13,18 +13,25 @@ use framegraph_generator::draw_frame_graph;
 use stack_merger::merge_stacks;
 use process_data::process_callstacks;
 
+/**
+ # Steps Description
+ 
+ - collect call stacks from URLs and save them to a json file(output.json)
+ - process the call stacks and save them to a text file(processed_stacks.txt)
+ - merge the call stacks and save them to a text file(merged_stacks_4ranks.txt)
+ - draw the frame graph from the merged call stacks(frame_graph.png)
+ */
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-// fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut file = File::open("./output/urls.json")?;
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
     let urls: Vec<String> = serde_json::from_str(&contents)?;
 
-    fetch_and_save_urls(urls).await?;  // 保存所有堆栈跟踪到output.json文件
+    fetch_and_save_urls(urls).await?;
 
 
-    let input_path = "./output/output.json";  //整理4个进程的数据到txt文件
+    let input_path = "./output/output.json"; 
     let output_path = "./output/processed_stacks.txt";
     process_callstacks(input_path, output_path)?;
 
@@ -34,7 +41,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let file = File::open("./output/processed_stacks.txt")?;
     let reader = BufReader::new(file);
 
-    // 创建一个 String 来存储文件内容
     let mut content = String::new();
     for line in reader.lines() {
         content.push_str(&line?);
