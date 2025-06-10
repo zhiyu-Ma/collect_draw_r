@@ -10,7 +10,7 @@ pub fn draw_frame_graph(file_path: &str) {
     let mut options = Options::default();
     options.colors = Palette::Multi(flamegraph::color::MultiPalette::Java);
 
-    let mut output_file = File::create("./output/flamegraph.svg").expect("Failed to create SVG file");
+    let mut output_file = File::create("./output/flamegraph222.svg").expect("Failed to create SVG file");
     flamegraph::from_reader(&mut options, reader, &mut output_file).expect("Failed to generate flamegraph");
 
     println!("Flamegraph generated and saved as flamegraph.svg");
@@ -23,7 +23,7 @@ mod tests {
 
     #[test]
     fn test_draw_frame_graph() {
-        draw_frame_graph("./output/stacks.txt");
-        assert!(fs::metadata("./output/flamegraph.svg").is_ok(), "SVG file should exist");
+        draw_frame_graph("/home/yang/worksapce/collect_stack_draw/debug/debug_4stacks.txt");
+        assert!(fs::metadata("./output/flamegraph222.svg").is_ok(), "SVG file should exist");
     }
 }

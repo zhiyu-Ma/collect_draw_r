@@ -1,7 +1,7 @@
 # 收集堆栈合并与绘制火焰图
 [![Rust](https://github.com/yangrudan/collect_draw_r/actions/workflows/rust.yml/badge.svg)](https://github.com/yangrudan/collect_draw_r/actions/workflows/rust.yml)
 
-## 介绍
+## 0x01 介绍
 
 >堆栈合并（Stack Merging）是一种技术，用于将多个调用堆栈中的信息汇总到一起，以便于分析和优化。
 >
@@ -10,19 +10,35 @@
 ### 1. 收集数据
 **前置条件**: 确保已经启用了性能分析工具Probing网页服务，并且已经生成了性能分析数据.
 
-```bash
-❯ cd /home/yang/worksapce/demangle_l                                                                                                                      
-❯ source /home/yang/worksapce/probing/venv/bin/activate
-❯ PROBING=1 PROBING_PORT=9922 python main.py     
-```
-
 ### 2. 堆栈合并
 收集多个rank堆栈信息并进行合并.
 
 ### 3. 火焰图绘制
 定制化火焰图生成.
 
-## Output文件说明
+## 0x02 使用方式
+
+准备工作(提供堆栈)
+```bash
+❯ cd /home/yang/worksapce/demangle_l                                                                                                                      
+❯ source /home/yang/worksapce/probing/venv/bin/activate
+❯ PROBING=1 PROBING_PORT=9922 python main.py     
+```
+
+**修改urls.json**
+
+```
+❯ cd /home/yang/worksapce/collect_draw_r                                                                                                                      
+❯ cargo run
+```
+
+## 0x03 运行结果
+
+![mmm.svg](./output/flamegraph.svg)
+
+![mmm222.svg](./output/flamegraph222.svg)
+
+## 0x04 Output文件说明
 
 - `urls.json` 为模拟的请求;
 - `response.json` 为单进程收集数据;
