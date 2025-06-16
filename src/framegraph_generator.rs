@@ -23,7 +23,8 @@ mod tests {
 
     #[test]
     fn test_draw_frame_graph() {
-        draw_frame_graph("/home/yang/worksapce/collect_stack_draw/debug/debug_4stacks.txt");
+        // draw_frame_graph("/home/yang/worksapce/collect_stack_draw/debug/debug_4stacks.txt");
+        draw_frame_graph("./output/stacks.txt");
         assert!(fs::metadata("./output/flamegraph222.svg").is_ok(), "SVG file should exist");
     }
 }
