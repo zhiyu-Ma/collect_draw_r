@@ -34,9 +34,8 @@
 
 ## 0x03 运行结果
 
-![mmm.svg](./output/flamegraph.svg)
-
-![mmm222.svg](./output/flamegraph222.svg)
+![flamegraph.svg](./output/flamegraph.svg)
+![mmm.svg](./output/mmm.svg)
 
 ## 0x04 Output文件说明
 
