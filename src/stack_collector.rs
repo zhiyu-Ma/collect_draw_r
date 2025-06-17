@@ -2,7 +2,8 @@ use reqwest;
 use serde_json::Value;
 use std::fs::File;
 use std::io::Write;
-use futures::future::join_all; 
+use futures::future::join_all;
+use std::path::Path;
 
 /// Fetches JSON data from a list of URLs and saves the combined data to a file.
 pub async fn fetch_and_save_urls(urls: Vec<String>) -> Result<(), Box<dyn std::error::Error>> {
@@ -30,10 +31,11 @@ pub async fn fetch_and_save_urls(urls: Vec<String>) -> Result<(), Box<dyn std::e
     }
 
     let output = serde_json::to_string_pretty(&data_list)?;
-    let mut file = File::create("./output/output.json")?;
+    let output_path = Path::new("./output/output.json");
+    let mut file = File::create(output_path)?;
     file.write_all(output.as_bytes())?;
 
-    println!("Data has been saved to output.json");
+    println!("Data has been saved to {}", output_path.display());
 
     Ok(())
 }
