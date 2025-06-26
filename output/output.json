@@ -3,8 +3,306 @@
     {
       "CFrame": {
         "file": "",
-        "func": "cudaStreamSynchronize",
-        "ip": "0x7f7b4a86bcd8",
+        "func": "__cudart1050",
+        "ip": "0x7faee47853c9",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7faee47be905",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7faee4776fd4",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7faedf9a9438",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_eval_code_obj",
+        "ip": "0x5c6737",
+        "lineno": 1291
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_mod",
+        "ip": "0x5c1870",
+        "lineno": 1312
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "pyrun_file",
+        "ip": "0x459839",
+        "lineno": 1208
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_SimpleFileObject",
+        "ip": "0x5bbdff",
+        "lineno": 456
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_AnyFileObject",
+        "ip": "0x5bbb63",
+        "lineno": 90
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file_obj",
+        "ip": "0x5b891d",
+        "lineno": 357
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file",
+        "ip": "0x5b891d",
+        "lineno": 376
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_python",
+        "ip": "0x5b891d",
+        "lineno": 595
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_RunMain",
+        "ip": "0x5b891d",
+        "lineno": 674
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_BytesMain",
+        "ip": "0x5885d9",
+        "lineno": 1094
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7faeea5a1083",
+        "lineno": 308
+      }
+    }
+  ],
+  [
+    {
+      "CFrame": {
+        "file": "",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7fde0e118185",
         "lineno": 0
       }
     },
@@ -12,7 +310,7 @@
       "CFrame": {
         "file": "",
         "func": "c10d::ProcessGroupNCCL::WorkNCCL::synchronizeInternal(std::chrono::duration<long, std::ratio<(long)1, (long)1000> >)",
-        "ip": "0x7f7aeb02fd25",
+        "ip": "0x7fdd942a8338",
         "lineno": 0
       }
     },
@@ -20,7 +318,7 @@
       "CFrame": {
         "file": "",
         "func": "c10d::ProcessGroupNCCL::WorkNCCL::wait(std::chrono::duration<long, std::ratio<(long)1, (long)1000> >)",
-        "ip": "0x7f7aeb039c3a",
+        "ip": "0x7fdd942b6870",
         "lineno": 0
       }
     },
@@ -28,7 +326,7 @@
       "CFrame": {
         "file": "",
         "func": "void pybind11::cpp_function::initialize<pybind11::cpp_function::cpp_function<bool, c10d::Work, std::chrono::duration<long, std::ratio<(long)1, (long)1000> >, pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::arg_v, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::arg_v, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Work*, std::chrono::duration<long, std::ratio<(long)1, (long)1000> >)#1}, bool, c10d::Work*, std::chrono::duration<long, std::ratio<(long)1, (long)1000> >, pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::arg_v, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::cpp_function::cpp_function<bool, c10d::Work, std::chrono::duration<long, std::ratio<(long)1, (long)1000> >, pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::arg_v, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::arg_v, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Work*, std::chrono::duration<long, std::ratio<(long)1, (long)1000> >&&)#1}, bool (*)(c10d::Work*, std::chrono::duration<long, std::ratio<(long)1, (long)1000> >), pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::arg_v, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(pybind11::detail::function_call&)#3}::_FUN(pybind11::detail::function_call&)",
-        "ip": "0x7f7b49d7e51e",
+        "ip": "0x7fde1d1d14b1",
         "lineno": 0
       }
     },
@@ -36,136 +334,192 @@
       "CFrame": {
         "file": "",
         "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
-        "ip": "0x7f7b4945bad4",
+        "ip": "0x7fde1ca17dd5",
         "lineno": 0
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/methodobject.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
         "func": "cfunction_call",
-        "ip": "0x55c5edb4af36",
-        "lineno": 542
+        "ip": "0x4fdcf7",
+        "lineno": 543
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyObject_MakeTpCall",
-        "ip": "0x55c5edb2897b",
-        "lineno": 214
+        "ip": "0x4f747b",
+        "lineno": 215
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509d6f",
+        "lineno": 112
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509d6f",
+        "lineno": 99
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509d6f",
+        "lineno": 53
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x55c5edb5a7df",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x55c5edb39ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_eval_code_obj",
-        "ip": "0x55c5edc0a31a",
-        "lineno": 1741
+        "ip": "0x5c6737",
+        "lineno": 1291
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_mod",
-        "ip": "0x55c5edc05f93",
-        "lineno": 1762
+        "ip": "0x5c1870",
+        "lineno": 1312
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "pyrun_file",
-        "ip": "0x55c5edc1b540",
-        "lineno": 1657
+        "ip": "0x459839",
+        "lineno": 1208
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_SimpleFileObject",
-        "ip": "0x55c5edc1aecc",
-        "lineno": 440
+        "ip": "0x5bbdff",
+        "lineno": 456
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_AnyFileObject",
-        "ip": "0x55c5edc1ac64",
-        "lineno": 79
+        "ip": "0x5bbb63",
+        "lineno": 90
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file_obj",
-        "ip": "0x55c5edc15233",
-        "lineno": 360
+        "ip": "0x5b891d",
+        "lineno": 357
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file",
-        "ip": "0x55c5edc15233",
-        "lineno": 379
+        "ip": "0x5b891d",
+        "lineno": 376
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_python",
-        "ip": "0x55c5edc15233",
-        "lineno": 605
+        "ip": "0x5b891d",
+        "lineno": 595
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_RunMain",
-        "ip": "0x55c5edc15233",
-        "lineno": 684
+        "ip": "0x5b891d",
+        "lineno": 674
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_BytesMain",
-        "ip": "0x55c5edbdc617",
-        "lineno": 738
+        "ip": "0x5885d9",
+        "lineno": 1094
       }
     },
     {
       "CFrame": {
-        "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
-        "func": "__libc_start_call_main",
-        "ip": "0x7f7b4e5abd90",
-        "lineno": 58
-      }
-    },
-    {
-      "CFrame": {
-        "file": "./csu/../csu/libc-start.c",
-        "func": "__libc_start_main_impl",
-        "ip": "0x7f7b4e5abe40",
-        "lineno": 392
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7fde21872083",
+        "lineno": 308
       }
     }
   ],
@@ -173,353 +527,297 @@
     {
       "CFrame": {
         "file": "",
-        "func": "cudaMemcpyAsync",
-        "ip": "0x7f8a034690a5",
+        "func": "__cudart1050",
+        "ip": "0x7f472c1403c9",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_kernel_cuda(at::TensorIterator&, bool)",
-        "ip": "0x7f899f777e58",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7f472c179905",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_impl(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d5043c83",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7f472c131fd4",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d5045622",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7f472cd1b438",
         "lineno": 0
       }
     },
     {
       "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::redispatch(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d5da8cfb",
-        "lineno": 0
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
       }
     },
     {
       "CFrame": {
-        "file": "",
-        "func": "torch::ADInplaceOrView::copy_(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d92f1565",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::redispatch(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d5da8cfb",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "torch::autograd::VariableType::(anonymous namespace)::copy_(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d92f2988",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::call(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f89d5e0f88c",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "c10d::Reducer::sync_bucket_indices(std::vector<std::vector<unsigned long, std::allocator<unsigned long> >, std::allocator<std::vector<unsigned long, std::allocator<unsigned long> > > >&)",
-        "ip": "0x7f89d93de027",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "c10d::Reducer::rebuild_buckets()",
-        "ip": "0x7f89d93e96f2",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "void pybind11::cpp_function::initialize<pybind11::cpp_function::cpp_function<bool, c10d::Reducer, , pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Reducer*)#1}, bool, c10d::Reducer*, pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::cpp_function::cpp_function<bool, c10d::Reducer, , pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Reducer*)#1}&&, bool (*)(c10d::Reducer*), pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(pybind11::detail::function_call&)#3}::_FUN(pybind11::detail::function_call&)",
-        "ip": "0x7f8a029717f1",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
-        "ip": "0x7f8a0205bad4",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/methodobject.c",
-        "func": "cfunction_call",
-        "ip": "0x564d6a0bef36",
-        "lineno": 542
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_MakeTpCall",
-        "ip": "0x564d6a09c97b",
-        "lineno": 214
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyFunction_Vectorcall",
-        "ip": "0x564d6a0ece48",
-        "lineno": 393
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x564d6a0ece48",
-        "lineno": 92
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x564d6a0ece48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x564d6a0adec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x564d6a0ece48",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x564d6a0ece48",
-        "lineno": 92
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x564d6a0ece48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x564d6a0adec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x564d6a0ece48",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x564d6a0ece48",
-        "lineno": 92
+        "ip": "0x4ee44f",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x564d6a0ece48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x564d6a0adec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x564d6a0ce7df",
-        "lineno": 393
+        "ip": "0x509a7e",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_FastCallDictTstate",
-        "ip": "0x564d6a0a1573",
-        "lineno": 141
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_Call_Prepend",
-        "ip": "0x564d6a0d6179",
-        "lineno": 482
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/typeobject.c",
-        "func": "slot_tp_call",
-        "ip": "0x564d6a1a5369",
-        "lineno": 7624
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_MakeTpCall",
-        "ip": "0x564d6a09c97b",
-        "lineno": 214
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_eval_code_obj",
-        "ip": "0x564d6a17e31a",
-        "lineno": 1741
+        "ip": "0x5c6737",
+        "lineno": 1291
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_mod",
-        "ip": "0x564d6a179f93",
-        "lineno": 1762
+        "ip": "0x5c1870",
+        "lineno": 1312
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "pyrun_file",
-        "ip": "0x564d6a18f540",
-        "lineno": 1657
+        "ip": "0x459839",
+        "lineno": 1208
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_SimpleFileObject",
-        "ip": "0x564d6a18eecc",
-        "lineno": 440
+        "ip": "0x5bbdff",
+        "lineno": 456
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_AnyFileObject",
-        "ip": "0x564d6a18ec64",
-        "lineno": 79
+        "ip": "0x5bbb63",
+        "lineno": 90
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file_obj",
-        "ip": "0x564d6a189233",
-        "lineno": 360
+        "ip": "0x5b891d",
+        "lineno": 357
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file",
-        "ip": "0x564d6a189233",
-        "lineno": 379
+        "ip": "0x5b891d",
+        "lineno": 376
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_python",
-        "ip": "0x564d6a189233",
-        "lineno": 605
+        "ip": "0x5b891d",
+        "lineno": 595
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_RunMain",
-        "ip": "0x564d6a189233",
-        "lineno": 684
+        "ip": "0x5b891d",
+        "lineno": 674
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_BytesMain",
-        "ip": "0x564d6a150617",
-        "lineno": 738
+        "ip": "0x5885d9",
+        "lineno": 1094
       }
     },
     {
       "CFrame": {
-        "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
-        "func": "__libc_start_call_main",
-        "ip": "0x7f8a07586d90",
-        "lineno": 58
-      }
-    },
-    {
-      "CFrame": {
-        "file": "./csu/../csu/libc-start.c",
-        "func": "__libc_start_main_impl",
-        "ip": "0x7f8a07586e40",
-        "lineno": 392
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7f4731432083",
+        "lineno": 308
       }
     }
   ],
@@ -527,353 +825,297 @@
     {
       "CFrame": {
         "file": "",
-        "func": "cudaMemcpyAsync",
-        "ip": "0x7f224b4690a5",
+        "func": "__cudart1050",
+        "ip": "0x7fc2db0603c9",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_kernel_cuda(at::TensorIterator&, bool)",
-        "ip": "0x7f21e7777e58",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7fc2db099905",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_impl(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f221d043c83",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7fc2db051fd4",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f221d045622",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7fc360b1e438",
         "lineno": 0
       }
     },
     {
       "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::redispatch(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f221dda8cfb",
-        "lineno": 0
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
       }
     },
     {
       "CFrame": {
-        "file": "",
-        "func": "torch::ADInplaceOrView::copy_(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f22212f1565",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::redispatch(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f221dda8cfb",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "torch::autograd::VariableType::(anonymous namespace)::copy_(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f22212f2988",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::call(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7f221de0f88c",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "c10d::Reducer::sync_bucket_indices(std::vector<std::vector<unsigned long, std::allocator<unsigned long> >, std::allocator<std::vector<unsigned long, std::allocator<unsigned long> > > >&)",
-        "ip": "0x7f22213de027",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "c10d::Reducer::rebuild_buckets()",
-        "ip": "0x7f22213e96f2",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "void pybind11::cpp_function::initialize<pybind11::cpp_function::cpp_function<bool, c10d::Reducer, , pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Reducer*)#1}, bool, c10d::Reducer*, pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::cpp_function::cpp_function<bool, c10d::Reducer, , pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Reducer*)#1}&&, bool (*)(c10d::Reducer*), pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(pybind11::detail::function_call&)#3}::_FUN(pybind11::detail::function_call&)",
-        "ip": "0x7f224a9717f1",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
-        "ip": "0x7f224a05bad4",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/methodobject.c",
-        "func": "cfunction_call",
-        "ip": "0x564a5e17af36",
-        "lineno": 542
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_MakeTpCall",
-        "ip": "0x564a5e15897b",
-        "lineno": 214
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyFunction_Vectorcall",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 393
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 92
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x564a5e169ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 92
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x564a5e169ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 92
+        "ip": "0x4ee44f",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x564a5e1a8e48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x564a5e169ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x564a5e18a7df",
-        "lineno": 393
+        "ip": "0x509a7e",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_FastCallDictTstate",
-        "ip": "0x564a5e15d573",
-        "lineno": 141
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_Call_Prepend",
-        "ip": "0x564a5e192179",
-        "lineno": 482
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/typeobject.c",
-        "func": "slot_tp_call",
-        "ip": "0x564a5e261369",
-        "lineno": 7624
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_MakeTpCall",
-        "ip": "0x564a5e15897b",
-        "lineno": 214
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_eval_code_obj",
-        "ip": "0x564a5e23a31a",
-        "lineno": 1741
+        "ip": "0x5c6737",
+        "lineno": 1291
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_mod",
-        "ip": "0x564a5e235f93",
-        "lineno": 1762
+        "ip": "0x5c1870",
+        "lineno": 1312
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "pyrun_file",
-        "ip": "0x564a5e24b540",
-        "lineno": 1657
+        "ip": "0x459839",
+        "lineno": 1208
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_SimpleFileObject",
-        "ip": "0x564a5e24aecc",
-        "lineno": 440
+        "ip": "0x5bbdff",
+        "lineno": 456
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_AnyFileObject",
-        "ip": "0x564a5e24ac64",
-        "lineno": 79
+        "ip": "0x5bbb63",
+        "lineno": 90
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file_obj",
-        "ip": "0x564a5e245233",
-        "lineno": 360
+        "ip": "0x5b891d",
+        "lineno": 357
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file",
-        "ip": "0x564a5e245233",
-        "lineno": 379
+        "ip": "0x5b891d",
+        "lineno": 376
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_python",
-        "ip": "0x564a5e245233",
-        "lineno": 605
+        "ip": "0x5b891d",
+        "lineno": 595
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_RunMain",
-        "ip": "0x564a5e245233",
-        "lineno": 684
+        "ip": "0x5b891d",
+        "lineno": 674
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_BytesMain",
-        "ip": "0x564a5e20c617",
-        "lineno": 738
+        "ip": "0x5885d9",
+        "lineno": 1094
       }
     },
     {
       "CFrame": {
-        "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
-        "func": "__libc_start_call_main",
-        "ip": "0x7f224f6e9d90",
-        "lineno": 58
-      }
-    },
-    {
-      "CFrame": {
-        "file": "./csu/../csu/libc-start.c",
-        "func": "__libc_start_main_impl",
-        "ip": "0x7f224f6e9e40",
-        "lineno": 392
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7fc366eb9083",
+        "lineno": 308
       }
     }
   ],
@@ -881,353 +1123,1191 @@
     {
       "CFrame": {
         "file": "",
-        "func": "cudaMemcpyAsync",
-        "ip": "0x7fa6dcc690a5",
+        "func": "__cudart1050",
+        "ip": "0x7fe2c2bf63c9",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_kernel_cuda(at::TensorIterator&, bool)",
-        "ip": "0x7fa677777e58",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7fe2c2c2f905",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_impl(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6ad043c83",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7fe2c2be7fd4",
         "lineno": 0
       }
     },
     {
       "CFrame": {
         "file": "",
-        "func": "at::native::copy_(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6ad045622",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7fe2c37a8438",
         "lineno": 0
       }
     },
     {
       "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::redispatch(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6adda8cfb",
-        "lineno": 0
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
       }
     },
     {
       "CFrame": {
-        "file": "",
-        "func": "torch::ADInplaceOrView::copy_(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6b12f1565",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::redispatch(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6adda8cfb",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "torch::autograd::VariableType::(anonymous namespace)::copy_(c10::DispatchKeySet, at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6b12f2988",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "at::_ops::copy_::call(at::Tensor&, at::Tensor const&, bool)",
-        "ip": "0x7fa6ade0f88c",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "c10d::Reducer::sync_bucket_indices(std::vector<std::vector<unsigned long, std::allocator<unsigned long> >, std::allocator<std::vector<unsigned long, std::allocator<unsigned long> > > >&)",
-        "ip": "0x7fa6b13de027",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "c10d::Reducer::rebuild_buckets()",
-        "ip": "0x7fa6b13e96f2",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "void pybind11::cpp_function::initialize<pybind11::cpp_function::cpp_function<bool, c10d::Reducer, , pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Reducer*)#1}, bool, c10d::Reducer*, pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::cpp_function::cpp_function<bool, c10d::Reducer, , pybind11::name, pybind11::is_method, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release> >(pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(c10d::Reducer*)#1}&&, bool (*)(c10d::Reducer*), pybind11::name const, pybind11::is_method&, pybind11::sibling, pybind11::call_guard<pybind11::gil_scoped_release>)::{lambda(pybind11::detail::function_call&)#3}::_FUN(pybind11::detail::function_call&)",
-        "ip": "0x7fa6d77707f1",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "",
-        "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
-        "ip": "0x7fa6d6e5aad4",
-        "lineno": 0
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/methodobject.c",
-        "func": "cfunction_call",
-        "ip": "0x55a24f3f6f36",
-        "lineno": 542
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_MakeTpCall",
-        "ip": "0x55a24f3d497b",
-        "lineno": 214
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyFunction_Vectorcall",
-        "ip": "0x55a24f424e48",
-        "lineno": 393
-      }
-    },
-    {
-      "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x55a24f424e48",
-        "lineno": 92
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x55a24f424e48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x55a24f3e5ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x55a24f424e48",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x55a24f424e48",
-        "lineno": 92
+        "ip": "0x4f2c56",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x55a24f424e48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x55a24f3e5ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x55a24f424e48",
-        "lineno": 393
+        "ip": "0x4fe13f",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Include/internal/pycore_call.h",
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
         "func": "_PyObject_VectorcallTstate",
-        "ip": "0x55a24f424e48",
-        "lineno": 92
+        "ip": "0x4ee44f",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/classobject.c",
-        "func": "method_vectorcall",
-        "ip": "0x55a24f424e48",
-        "lineno": 89
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/ceval.c",
-        "func": "do_call_core",
-        "ip": "0x55a24f3e5ec7",
-        "lineno": 7349
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
         "func": "_PyFunction_Vectorcall",
-        "ip": "0x55a24f4067df",
-        "lineno": 393
+        "ip": "0x509a7e",
+        "lineno": 342
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_FastCallDictTstate",
-        "ip": "0x55a24f3d9573",
-        "lineno": 141
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_Call_Prepend",
-        "ip": "0x55a24f40e179",
-        "lineno": 482
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/typeobject.c",
-        "func": "slot_tp_call",
-        "ip": "0x55a24f4dd369",
-        "lineno": 7624
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Objects/call.c",
-        "func": "_PyObject_MakeTpCall",
-        "ip": "0x55a24f3d497b",
-        "lineno": 214
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_eval_code_obj",
-        "ip": "0x55a24f4b631a",
-        "lineno": 1741
+        "ip": "0x5c6737",
+        "lineno": 1291
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "run_mod",
-        "ip": "0x55a24f4b1f93",
-        "lineno": 1762
+        "ip": "0x5c1870",
+        "lineno": 1312
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "pyrun_file",
-        "ip": "0x55a24f4c7540",
-        "lineno": 1657
+        "ip": "0x459839",
+        "lineno": 1208
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_SimpleFileObject",
-        "ip": "0x55a24f4c6ecc",
-        "lineno": 440
+        "ip": "0x5bbdff",
+        "lineno": 456
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Python/pythonrun.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
         "func": "_PyRun_AnyFileObject",
-        "ip": "0x55a24f4c6c64",
-        "lineno": 79
+        "ip": "0x5bbb63",
+        "lineno": 90
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file_obj",
-        "ip": "0x55a24f4c1233",
-        "lineno": 360
+        "ip": "0x5b891d",
+        "lineno": 357
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_file",
-        "ip": "0x55a24f4c1233",
-        "lineno": 379
+        "ip": "0x5b891d",
+        "lineno": 376
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "pymain_run_python",
-        "ip": "0x55a24f4c1233",
-        "lineno": 605
+        "ip": "0x5b891d",
+        "lineno": 595
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_RunMain",
-        "ip": "0x55a24f4c1233",
-        "lineno": 684
+        "ip": "0x5b891d",
+        "lineno": 674
       }
     },
     {
       "CFrame": {
-        "file": "/usr/local/src/conda/python-3.11.10/Modules/main.c",
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
         "func": "Py_BytesMain",
-        "ip": "0x55a24f488617",
-        "lineno": 738
+        "ip": "0x5885d9",
+        "lineno": 1094
       }
     },
     {
       "CFrame": {
-        "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
-        "func": "__libc_start_call_main",
-        "ip": "0x7fa6e0c17d90",
-        "lineno": 58
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7fe2d5b6e083",
+        "lineno": 308
+      }
+    }
+  ],
+  [
+    {
+      "CFrame": {
+        "file": "",
+        "func": "__cudart1050",
+        "ip": "0x7f928c5563c9",
+        "lineno": 0
       }
     },
     {
       "CFrame": {
-        "file": "./csu/../csu/libc-start.c",
-        "func": "__libc_start_main_impl",
-        "ip": "0x7fa6e0c17e40",
-        "lineno": 392
+        "file": "",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7f928c58f905",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7f928c547fd4",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7f927dd25438",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_eval_code_obj",
+        "ip": "0x5c6737",
+        "lineno": 1291
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_mod",
+        "ip": "0x5c1870",
+        "lineno": 1312
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "pyrun_file",
+        "ip": "0x459839",
+        "lineno": 1208
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_SimpleFileObject",
+        "ip": "0x5bbdff",
+        "lineno": 456
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_AnyFileObject",
+        "ip": "0x5bbb63",
+        "lineno": 90
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file_obj",
+        "ip": "0x5b891d",
+        "lineno": 357
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file",
+        "ip": "0x5b891d",
+        "lineno": 376
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_python",
+        "ip": "0x5b891d",
+        "lineno": 595
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_RunMain",
+        "ip": "0x5b891d",
+        "lineno": 674
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_BytesMain",
+        "ip": "0x5885d9",
+        "lineno": 1094
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7f92906ee083",
+        "lineno": 308
+      }
+    }
+  ],
+  [
+    {
+      "CFrame": {
+        "file": "",
+        "func": "__cudart1050",
+        "ip": "0x7fc6141e83c9",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7fc614221905",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7fc6141d9fd4",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7fc60f9a9438",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_eval_code_obj",
+        "ip": "0x5c6737",
+        "lineno": 1291
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_mod",
+        "ip": "0x5c1870",
+        "lineno": 1312
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "pyrun_file",
+        "ip": "0x459839",
+        "lineno": 1208
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_SimpleFileObject",
+        "ip": "0x5bbdff",
+        "lineno": 456
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_AnyFileObject",
+        "ip": "0x5bbb63",
+        "lineno": 90
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file_obj",
+        "ip": "0x5b891d",
+        "lineno": 357
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file",
+        "ip": "0x5b891d",
+        "lineno": 376
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_python",
+        "ip": "0x5b891d",
+        "lineno": 595
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_RunMain",
+        "ip": "0x5b891d",
+        "lineno": 674
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_BytesMain",
+        "ip": "0x5885d9",
+        "lineno": 1094
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7fc61a004083",
+        "lineno": 308
+      }
+    }
+  ],
+  [
+    {
+      "CFrame": {
+        "file": "",
+        "func": "__cudart1050",
+        "ip": "0x7fe49461e3c9",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "cudaDeviceSynchronize",
+        "ip": "0x7fe494657905",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "c10::cuda::device_synchronize()",
+        "ip": "0x7fe49460ffd4",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "",
+        "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+        "ip": "0x7fe48f7a8438",
+        "lineno": 0
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+        "func": "cfunction_vectorcall_NOARGS",
+        "ip": "0x4fbc95",
+        "lineno": 489
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4f2c56",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4f2c56",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4f2c56",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x509a7e",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+        "func": "method_vectorcall",
+        "ip": "0x509a7e",
+        "lineno": 53
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee44f",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee44f",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee44f",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+        "func": "_PyFunction_Vectorcall",
+        "ip": "0x4fe13f",
+        "lineno": 342
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "_PyObject_VectorcallTstate",
+        "ip": "0x4ee861",
+        "lineno": 114
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+        "func": "PyObject_Vectorcall",
+        "ip": "0x4ee861",
+        "lineno": 123
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+        "func": "call_function",
+        "ip": "0x4ee861",
+        "lineno": 5893
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_eval_code_obj",
+        "ip": "0x5c6737",
+        "lineno": 1291
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "run_mod",
+        "ip": "0x5c1870",
+        "lineno": 1312
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "pyrun_file",
+        "ip": "0x459839",
+        "lineno": 1208
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_SimpleFileObject",
+        "ip": "0x5bbdff",
+        "lineno": 456
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+        "func": "_PyRun_AnyFileObject",
+        "ip": "0x5bbb63",
+        "lineno": 90
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file_obj",
+        "ip": "0x5b891d",
+        "lineno": 357
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_file",
+        "ip": "0x5b891d",
+        "lineno": 376
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "pymain_run_python",
+        "ip": "0x5b891d",
+        "lineno": 595
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_RunMain",
+        "ip": "0x5b891d",
+        "lineno": 674
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+        "func": "Py_BytesMain",
+        "ip": "0x5885d9",
+        "lineno": 1094
+      }
+    },
+    {
+      "CFrame": {
+        "file": "/build/glibc-B3wQXB/glibc-2.31/csu/../csu/libc-start.c",
+        "func": "__libc_start_main",
+        "ip": "0x7fe49a239083",
+        "lineno": 308
       }
     }
   ]
