@@ -2,9 +2,5 @@
     "http://10.107.204.71:12347/apis/pythonext/callstack", 
     "http://10.107.204.71:12348/apis/pythonext/callstack", 
     "http://10.107.204.71:12349/apis/pythonext/callstack", 
-    "http://10.107.204.71:12350/apis/pythonext/callstack",
-    "http://10.107.204.71:12351/apis/pythonext/callstack", 
-    "http://10.107.204.71:12352/apis/pythonext/callstack", 
-    "http://10.107.204.71:12353/apis/pythonext/callstack", 
-    "http://10.107.204.71:12354/apis/pythonext/callstack"
+    "http://10.107.204.71:12350/apis/pythonext/callstack"
 ]
