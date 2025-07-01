@@ -32,7 +32,7 @@ pub async fn fetch_and_save_urls(urls: Vec<String>) -> Result<(), Box<dyn std::e
     for result in results {
         match result {
             Ok(Some(json)) => data_list.push(json),
-            Ok(None) => data_list.push(Value::Null), // Insert a JSON null value for failed requests
+            Ok(None) => data_list.push(Value::Array(Vec::new())), // Insert a JSON null value for failed requests
             Err(e) => eprintln!("Error: {}", e),
         }
     }
