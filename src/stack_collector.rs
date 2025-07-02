@@ -38,11 +38,10 @@ pub async fn fetch_and_save_urls(urls: Vec<String>) -> Result<(), Box<dyn std::e
     }
 
     let output = serde_json::to_string_pretty(&data_list)?;
-    let output_path = Path::new("./output/output.json");
-    let mut file = File::create(output_path)?;
+    let mut file = File::create("./output/output.json")?;
     file.write_all(output.as_bytes())?;
 
-    println!("Data has been saved to {}", output_path.display());
+    println!("Data has been saved to output.json");
 
     Ok(())
 }
