@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, BTreeSet};
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 
@@ -7,7 +7,7 @@ use std::io::{self, BufRead, BufReader};
 pub struct TrieNode {
     children: HashMap<String, TrieNode>,
     is_end_of_stack: bool,
-    ranks: Vec<u32>,
+    ranks: BTreeSet<u32>,
 }
 
 impl TrieNode {
@@ -15,26 +15,27 @@ impl TrieNode {
         TrieNode {
             children: HashMap::new(),
             is_end_of_stack: false,
-            ranks: Vec::new(),
+            ranks: BTreeSet::new(),
         }
     }
 
     fn add_rank(&mut self, rank: u32) {
-        self.ranks.push(rank);
+        self.ranks.insert(rank);
     }
 }
 
 /// Represents a Trie structure for merging stack traces.
 pub struct StackTrie {
     pub root: TrieNode,
-    all_ranks: Vec<u32>,
+    all_ranks: BTreeSet<u32>,
 }
 
 impl StackTrie {
     fn new(all_ranks: Vec<u32>) -> Self {
+        let all_ranks_set: BTreeSet<_> = all_ranks.into_iter().collect();
         StackTrie {
             root: TrieNode::new(),
-            all_ranks,
+            all_ranks: all_ranks_set,
         }
     }
 
@@ -48,11 +49,13 @@ impl StackTrie {
         node.add_rank(rank);
     }
 
-    fn format_rank_str(&self, ranks: &[u32]) -> String {
-        let mut ranks = ranks.to_vec();
-        ranks.sort_unstable();
-        let mut leak_ranks: Vec<u32> = self.all_ranks.iter().copied().filter(|r| !ranks.contains(r)).collect();
-        leak_ranks.sort_unstable();
+    fn format_rank_str(&self, ranks: &BTreeSet<u32>) -> String {
+        let ranks_vec: Vec<_> = ranks.iter().cloned().collect();
+        
+        let leak_ranks: Vec<_> = self.all_ranks
+            .difference(ranks)
+            .cloned()
+            .collect();
 
         fn inner_format(ranks: &[u32]) -> String {
             let mut str_buf = String::new();
@@ -85,7 +88,7 @@ impl StackTrie {
             str_buf
         }
 
-        let has_stack_ranks = inner_format(&ranks);
+        let has_stack_ranks = inner_format(&ranks_vec);
         let leak_stack_ranks = inner_format(&leak_ranks);
         format!("@{}|{}", has_stack_ranks, leak_stack_ranks)
     }
