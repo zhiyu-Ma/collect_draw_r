@@ -1,6 +1,5 @@
 use std::collections::{HashMap, BTreeSet};
-use std::fs::File;
-use std::io::{self, BufRead, BufReader};
+
 
 /// Represents a node in the Trie structure for stack traces.
 #[derive(Debug, Clone)]
@@ -122,31 +121,6 @@ pub fn merge_stacks(stacks: Vec<&str>) -> StackTrie {
     trie
 }
 
-fn read_file_to_list(file_path: &str) -> io::Result<Vec<String>> {
-    let file = File::open(file_path)?;
-    let reader = BufReader::new(file);
-    let mut lines = Vec::new();
-    for line in reader.lines() {
-        let line = line?;
-        lines.push(line);
-    }
-    Ok(lines)
-}
 
-    //////////////////////////////////////////////////////////////////////////
 
-    // let stacks = vec![
-    //     "main;func1;func2;func3",
-    //     "main;func1;func2;func4",
-    //     "main;func1;func3;func5",
-    //     "main;func1;func3;func6",
-    // ];
-
-    // let trie = merge_stacks(stacks);
-
-    // let mut output = File::create("./output/merged_stacks.txt")?;
-    // for (path, rank_str) in trie.traverse_with_all_stack(&trie.root, Vec::new()) {
-    //     writeln!(output, "{} {} 1", path.join(";"), rank_str)?;
-    // }
-
-    ////////////////////////////////////////////////////////////////////////////////
+    
